@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/api/list', function(req, res, next) {
-  return res.status(200).json({data: excusesList})
+  return res.status(200).json(excusesList)
 });
 
 router.post('/api/new', function(req, res, next) {

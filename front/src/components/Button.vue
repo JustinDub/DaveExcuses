@@ -10,7 +10,7 @@
         name: 'Button',
         data: function() {
             return {
-                excusesList: ["d", "b", "c"]
+                excusesList: []
             }
         },
         props: {
@@ -19,11 +19,9 @@
         mounted() {
             axios.get("/api/list")
                 .then(response => {
-                    return response.data
-                    })
-                .then(result => {
-                    this.excusesList = result;
-            });
+                    console.log(response.data)
+                    this.excusesList = response.data 
+                });
         },
         methods: {
             generateExcuse() {
