@@ -1,3 +1,3 @@
 <template>
-    <p> HttpCode {{$route.params.http_code}}</p>
+    <h1> HttpCode {{$route.params.http_code}}</h1>
 </template>

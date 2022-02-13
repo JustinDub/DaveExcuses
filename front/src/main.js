@@ -13,7 +13,7 @@ const routes = [
   { path: '/', component: HelloWorld },
   { path: "/lost", component: Lost },
   { path: "*", component: NotFound },
-  { path: "/:http_code(\\d+)", component: HttpCode }
+  { path: "/:http_code(7\\d\\d)", component: HttpCode }
 ]
 
 new Vue({
