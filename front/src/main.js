@@ -4,6 +4,7 @@ import App from './App.vue'
 import HelloWorld from './components/HelloWorld.vue'
 import Lost from './components/Lost.vue'
 import NotFound from './components/NotFound.vue'
+import HttpCode from './components/HttpCode.vue'
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
@@ -11,7 +12,8 @@ Vue.use(VueRouter)
 const routes = [
   { path: '/', component: HelloWorld },
   { path: "/lost", component: Lost },
-  { path: "*", component: NotFound }
+  { path: "*", component: NotFound },
+  { path: "/:http_code(\\d+)", component: HttpCode }
 ]
 
 new Vue({
