@@ -2,9 +2,9 @@ var express = require('express');
 var router = express.Router();
 
 var excusesList = [
-  "a",
-  "b",
-  "c"
+  "Pas le temps.",
+  "Mauvaise connexion.",
+  "Trop compliqué."
 ]
 
 /* GET home page. */

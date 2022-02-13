@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>Application de Dave</h1>
     <p>
       {{ excuse }}
     </p>
@@ -17,9 +17,6 @@ export default {
     return {
       excuse: 'Aucune excuse pour le moment.'
     }
-  },
-  props: {
-    msg: String
   },
   methods: {
     changeExcuse(newExcuse) {

@@ -21,7 +21,8 @@
                 .then(response => {
                     console.log(response.data)
                     this.excusesList = response.data 
-                });
+                })
+                .catch(error => console.log(error));
         },
         methods: {
             generateExcuse() {
